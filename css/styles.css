@@ -1,3 +1,61 @@
-body {
-  background-color: blue;
+/* цвет основного текста: #757575;*/
+/* вторичный цвет текста: #212121;*/
+
+/* основной цвет фона #FFFFFF;*/
+/* вторичный цвет фона #2F303A; цвет фона в герое и подвале*/
+
+/* color: #FFFFFF;*/
+/* color: rgba(255, 255, 255, 0.6); цвет адресса в подвале*/
+/* акцент #2196F3; цвет кнопки,ссылок в шапке,лого*/
+/*страница*/
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --main-background-color: #ffffff;
+  --secondary-background-color: #2f303a;
+  --accent-color: #2196f3;
+}
+.page {
+  background-color: var(--main-background-color);
+  color: var(--primary-text-color);
+}
+/*логотип*/
+.logo {
+  color: #000000;
+}
+/* убираем маркеры*/
+ul {
+  list-style: none;
+}
+/*ссылки в шапке*/
+.site-nav .link {
+  color: var(--secondary-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.address-nav .link {
+  color: var(--primary-text-color);
+}
+.address-nav .link:hover,
+.address-nav .link:focus {
+  color: var(--accent-color);
+}
+/*hero*/
+.hero-title {
+  background-color: #2f303a;
+  color: var(--main-background-color);
+}
+/*секции*/
+.section-title {
+  color: var(--secondary-text-color);
+}
+/*кнопка*/
+.button {
+  background-color: var(--accent-color);
+  color: var(--main-background-color);
 }
